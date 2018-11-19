@@ -159,7 +159,7 @@ border-radius: 50%;
   width: 40px;
   height: 40px;
   animation: bubbleUp 15s infinite;
-  animation-delay: 1.5s
+  animation-delay: 1.5s;
   background-color: #CECECE;
   border-radius: 50%;
 }
