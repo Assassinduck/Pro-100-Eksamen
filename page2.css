@@ -9,10 +9,7 @@ html, body{
 
 body{
   background-color: #57BFAA;
-}
-
-#background-cont {
-  background-: url();
+  background-image:url(eksamenpage2.png);
 }
 
 header {
@@ -38,8 +35,6 @@ footer {
 }
 
 
-
-
 .trainTest {
 position:absolute;
 width: 250px;
@@ -52,8 +47,14 @@ animation: train 10s infinite;
 
 .fish {
   position: absolute;
+  float: left;
 }
 
+#fish1 {
+  height: 50px;
+  length: 50px;
+  position: absolute;
+}
 
 
 /* bubble animations:
