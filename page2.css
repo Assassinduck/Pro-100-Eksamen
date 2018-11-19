@@ -257,7 +257,8 @@ border-radius: 50%;
 }
 /* bubble animations end:
 */
+
 @keyframes train {
-  0% {transform: translateX(320px)}
-  100% {transform: translateX(-1500px)}
+  0% {left:2300px} /*left:2300pxtransform: translateX(320px)*/
+  100% {left:-1000px} /*{transform: translateX(-1500px)*/
 }
