@@ -63,11 +63,12 @@ animation: train 10s infinite;
 
 .fish {
   position: absolute;
+  height: 50px;
+  width: 50px;
 }
 
 #fish1 {
-  height: 50px;
-  width: 50px;
+
   background-image: "/fish1.png";
   top:200px;
   left:200px;
