@@ -4,13 +4,7 @@ html, body{
   overflow-x: hidden;
 }
 
-body{
-<<<<<<< HEAD
-  background-color: #57BFAA;
-  background-image:url(eksamenpage2.png);
-  
-=======
->>>>>>> e11c5db40fcceb734b874455fb43bd5b71d9aec6
+body{  
 }
 
 header {
@@ -47,7 +41,6 @@ background-color: red;
 animation: train 10s infinite;
 }
 
-<<<<<<< HEAD
 /*train animtaion:
 */
 @keyframes train {
@@ -69,19 +62,6 @@ animation: train 10s infinite;
   top:200px;
   left:200px;
   z-index: 10;
-=======
-/* .parallax [class*="bg__"] {
-height: 3000px;
-text-indent: -9999px;
-/* background-position: center center;
-background-size: cover;
-}
-*/
-.bg__underwater {
-  background-image: url(eksamenpage2.png);
-  height: 300px;
-  width: 1540px;
->>>>>>> e11c5db40fcceb734b874455fb43bd5b71d9aec6
 }
 /*
 Fish animation
