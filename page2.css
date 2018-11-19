@@ -5,6 +5,10 @@ html, body{
   background-attachment: scroll;
 }
 
+body {
+  height: 3050px;
+}
+
 
 header {
   margin: 0 auto;
@@ -18,9 +22,7 @@ header {
 }
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    position: absolute;
     width: 100%;
     background-color: #343E3D;
     color: white;
@@ -37,7 +39,7 @@ footer {
 .bg__underwater {
   height: 3000px;
   width: 1920px;
-  background-image: url(/oslo\ botton2.png);
+  background-image: url(oslo\ botton2.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 1920px 3000px;
@@ -49,7 +51,7 @@ footer {
 .train {
 background-image: url(tog.png);
 background-repeat: no-repeat;
-position:absolute;
+position: absolute;
 width: 600px;
 height: 250px;
 top: 2640px;
@@ -63,7 +65,7 @@ z-index: 2;
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  bottom: -2040px;
+  bottom: -2102px;
   left: -230px;
   height: 210px;
   width: 2200px;
@@ -74,8 +76,8 @@ z-index: 2;
 /*train animtaion:
 */
 @keyframes train {
-  0% {transform: translateX(320px)}
-  100% {transform: translateX(-1500px)}
+  0% {left: 2300px}
+  100% {left: -1000px}
 }
 /*train animtaion end:
 */
