@@ -1,15 +1,10 @@
 html, body{
   margin: 0;
   padding: 0;
-  width: 1540px;
-  height:3000px;
-  background-attachment: scroll;
   overflow-x: hidden;
 }
 
 body{
-  background-color: #57BFAA;
-  background-image:url(eksamenpage2.png);
 }
 
 header {
@@ -39,24 +34,27 @@ footer {
 position:absolute;
 width: 250px;
 height: 250px;
-top: 450px;
+top: 2550px;
 left: 80%;
 background-color: red;
 animation: train 10s infinite;
 }
 
-.fish {
-  position: absolute;
-  float: left;
+/* .parallax [class*="bg__"] {
+height: 3000px;
+text-indent: -9999px;
+/* background-position: center center;
+background-size: cover;
+}
+*/
+.bg__underwater {
+  background-image: url(eksamenpage2.png);
+  height: 300px;
+  width: 1540px;
 }
 
-#fish1 {
-  height: 50px;
-  length: 50px;
-  position: absolute;
+.bg_landscape {
 }
-
-
 /* bubble animations:
 Delt inn i groups for å bestemme hvor boblene skal komme opp fra.
 ID for å endre på hver spesifikk boble.(størrelse, animation-timing)
