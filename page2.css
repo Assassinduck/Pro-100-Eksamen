@@ -10,6 +10,7 @@ html, body{
 body{
   background-color: #57BFAA;
   background-image:url(eksamenpage2.png);
+  
 }
 
 header {
@@ -34,7 +35,8 @@ footer {
     padding: 2rem;
 }
 
-
+/*train:
+*/
 .trainTest {
 position:absolute;
 width: 250px;
@@ -45,16 +47,31 @@ background-color: red;
 animation: train 10s infinite;
 }
 
+/*train animtaion:
+*/
+@keyframes train {
+  0% {transform: translateX(320px)}
+  100% {transform: translateX(-1500px)}
+}
+/*train animtaion end:
+*/
+
+
 .fish {
   position: absolute;
-  float: left;
 }
 
 #fish1 {
   height: 50px;
-  length: 50px;
-  position: absolute;
+  width: 50px;
+  background-image: "/fish1.png";
+  top:200px;
+  left:200px;
+  z-index: 10;
 }
+/*
+Fish animation
+*/
 
 
 /* bubble animations:
@@ -62,14 +79,7 @@ Delt inn i groups for å bestemme hvor boblene skal komme opp fra.
 ID for å endre på hver spesifikk boble.(størrelse, animation-timing)
 */
 
-@keyframes train {
-  0% {transform: translateX(320px)}
-  100% {transform: translateX(-1500px)}
-}
 
-@keyframes bubbleUp {
-  100% {transform: translateY(-800px)}
-}
 
 .bubble-group1 {
 position: absolute;
@@ -215,3 +225,16 @@ border-radius: 50%;
   background-color: #CECECE;
   border-radius: 50%;
 }
+/* bubble animations:
+*/
+
+@keyframes bubbleUp {
+  100% {transform: translateY(-800px)}
+}
+/* bubble animations end:
+*/
+@keyframes train {
+  0% {transform: translateX(320px)}
+  100% {transform: translateX(-1500px)}
+}
+
