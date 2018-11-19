@@ -36,7 +36,7 @@ footer {
 .bg__underwater {
   height: 3000px;
   width: 1920px;
-  background-image: url(eksamenpage2);
+  background-image: url(/oslo\ botton2.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 1920px 3000px;
@@ -78,14 +78,6 @@ z-index: 2;
 */
 
 
-.bg__underwater {
-  background-image: url(eksamenpage2.png);
-  height: 3000px;
-  width: 1540px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
 
 div.fish{
   height: 15px;
