@@ -1,6 +1,7 @@
 html, body{
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   background-attachment: scroll;
 }
 
@@ -36,12 +37,11 @@ footer {
 .bg__underwater {
   height: 3000px;
   width: 1920px;
-  background-image: url(eksamenpage2);
+  background-image: url(oslo botton2);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 1920px 3000px;
 }
-
 
 
 /*train:
@@ -59,12 +59,15 @@ z-index: 2;
 }
 
 .tunnel {
-  background-color: black;
+  background-image: url(tunnel.png);
+  background-repeat: no-repeat;
+  background-size: contain;
   position: absolute;
-  top: 2500px;
-  left:0px;
-  height: 200px;
-  length: 200px;
+  bottom: -2040px;
+  left: -230px;
+  height: 210px;
+  width: 2200px;
+  z-index: 3;
 }
 
 
@@ -77,15 +80,6 @@ z-index: 2;
 /*train animtaion end:
 */
 
-
-.bg__underwater {
-  background-image: url(eksamenpage2.png);
-  height: 3000px;
-  width: 1540px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
 
 div.fish{
   height: 15px;
@@ -113,27 +107,27 @@ ID for å endre på hver spesifikk boble.(størrelse, animation-timing)
 
 .bubble-group1 {
 position: absolute;
-bottom: -1500px;
+bottom: -2050px;
 left: 10%;
 background-color: solid #CECECE;
-opacity: .5;
+opacity: .4;
 border: 1px solid white;
 border-radius: 50%;
 }
 
 .bubble-group2 {
   position: absolute;
-  bottom: -1500px;
+  bottom: -2050px;
   left: 35%;
   background-color: #CECECE;
-  opacity: .5;
+  opacity: .4;
   border: 1px solid white;
   border-radius: 50%;
 }
 
 .bubble-group3 {
   position: absolute;
-  bottom: -1500px;
+  bottom: -2050px;
   left: 85%;
   background-color: #CECECE;
   opacity: .3;
@@ -143,10 +137,10 @@ border-radius: 50%;
 
 .bubble-group4 {
   position: absolute;
-  bottom: -1500px;
+  bottom: -2050px;
   left: 60%;
   background-color: #CECECE;
-  opacity: .55;
+  opacity: .35;
   border: 1px solid white;
   border-radius: 50%;
 }
@@ -259,7 +253,7 @@ border-radius: 50%;
 */
 
 @keyframes bubbleUp {
-  100% {transform: translateY(-800px)}
+  100% {transform: translateY(-2200px);}
 }
 /* bubble animations end:
 */
