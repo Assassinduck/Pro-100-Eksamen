@@ -1,10 +1,7 @@
 html, body{
   margin: 0;
   padding: 0;
-  width: 1540px;
-  height:3000px;
   background-attachment: scroll;
-  overflow-x: hidden;
 }
 
 body{
@@ -32,33 +29,44 @@ footer {
     padding: 2rem;
 }
 
-.parallax /* [class*="bg__"] */ {
-  height: 100%;
+ .parallax [class*="bg__"] {
   background-attachment: fixed;
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .bg__underwater {
+  height: 3000px;
+  width: 1920px;
   background-image: url(eksamenpage2);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 1920px 3000px;
 }
 
+#noecontainer{
+  background: url(eksamenpage2) no-repeat;
+  background-size:auto;
+  position: relative;
+  width: 1920px;
+  height: 3000px;
+}
 
 
 /*train:
 */
-.trainTest {
+.train {
+background-image: url(tog.png);
 position:absolute;
-width: 250px;
+width: 600px;
 height: 250px;
 top: 450px;
 left: 80%;
-background-color: red;
 animation: train 10s infinite;
+z-index: 2;
 }
+
+
 
 /*train animtaion:
 */
@@ -98,7 +106,7 @@ ID for å endre på hver spesifikk boble.(størrelse, animation-timing)
 
 .bubble-group1 {
 position: absolute;
-bottom: -2500px;
+bottom: -1500px;
 left: 10%;
 background-color: solid #CECECE;
 opacity: .5;
@@ -108,7 +116,7 @@ border-radius: 50%;
 
 .bubble-group2 {
   position: absolute;
-  bottom: -2500px;
+  bottom: -1500px;
   left: 35%;
   background-color: #CECECE;
   opacity: .5;
@@ -118,7 +126,7 @@ border-radius: 50%;
 
 .bubble-group3 {
   position: absolute;
-  bottom: -25000px;
+  bottom: -1500px;
   left: 85%;
   background-color: #CECECE;
   opacity: .3;
@@ -128,7 +136,7 @@ border-radius: 50%;
 
 .bubble-group4 {
   position: absolute;
-  bottom: -2500px;
+  bottom: -1500px;
   left: 60%;
   background-color: #CECECE;
   opacity: .55;
