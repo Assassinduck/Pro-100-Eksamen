@@ -7,8 +7,8 @@ html, body{
   overflow-x: hidden;
 }
 
+
 body{  
-  
 }
 
 header {
@@ -33,6 +33,22 @@ footer {
     padding: 2rem;
 }
 
+.parallax /* [class*="bg__"] */ {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.bg__underwater {
+  background-image: url(eksamenpage2);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+
 /*train:
 */
 .trainTest {
@@ -53,12 +69,13 @@ animation: train 10s infinite;
 }
 /*train animtaion end:
 */
-
-
-.fish {
-  position: absolute;
-  height: 50px;
-  width: 50px;
+.bg__underwater {
+  background-image: url(eksamenpage2.png);
+  height: 3000px;
+  width: 1540px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 #fish1 {
@@ -82,7 +99,7 @@ ID for å endre på hver spesifikk boble.(størrelse, animation-timing)
 
 .bubble-group1 {
 position: absolute;
-bottom: -10px;
+bottom: -2500px;
 left: 10%;
 background-color: solid #CECECE;
 opacity: .5;
@@ -92,7 +109,7 @@ border-radius: 50%;
 
 .bubble-group2 {
   position: absolute;
-  bottom: -10px;
+  bottom: -2500px;
   left: 35%;
   background-color: #CECECE;
   opacity: .5;
@@ -102,7 +119,7 @@ border-radius: 50%;
 
 .bubble-group3 {
   position: absolute;
-  bottom: -10px;
+  bottom: -25000px;
   left: 85%;
   background-color: #CECECE;
   opacity: .3;
@@ -112,7 +129,7 @@ border-radius: 50%;
 
 .bubble-group4 {
   position: absolute;
-  bottom: -10px;
+  bottom: -2500px;
   left: 60%;
   background-color: #CECECE;
   opacity: .55;
@@ -236,4 +253,3 @@ border-radius: 50%;
   0% {transform: translateX(320px)}
   100% {transform: translateX(-1500px)}
 }
-
