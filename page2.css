@@ -5,7 +5,6 @@ html, body{
 }
 
 body{
-
 }
 
 header {
@@ -30,7 +29,24 @@ footer {
     padding: 2rem;
 }
 
+.parallax /* [class*="bg__"] */ {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
 
+.bg__underwater {
+  background-image: url(eksamenpage2);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+
+/*train:
+*/
 .trainTest {
 position:absolute;
 width: 250px;
@@ -41,12 +57,13 @@ background-color: red;
 animation: train 10s infinite;
 }
 
-/* .parallax [class*="bg__"] {
-height: 3000px;
-text-indent: -9999px;
-/* background-position: center center;
-background-size: cover;
+/*train animtaion:
+*/
+@keyframes train {
+  0% {transform: translateX(320px)}
+  100% {transform: translateX(-1500px)}
 }
+/*train animtaion end:
 */
 .bg__underwater {
   background-image: url(eksamenpage2.png);
@@ -57,6 +74,18 @@ background-size: cover;
   background-size: cover;
 }
 
+#fish1 {
+  height: 50px;
+  width: 50px;
+  background-image: "/fish1.png";
+  top:200px;
+  left:200px;
+  z-index: 10;
+}
+/*
+Fish animation
+*/
+
 .bg_landscape {
 }
 /* bubble animations:
@@ -64,18 +93,11 @@ Delt inn i groups for å bestemme hvor boblene skal komme opp fra.
 ID for å endre på hver spesifikk boble.(størrelse, animation-timing)
 */
 
-@keyframes train {
-  0% {transform: translateX(320px)}
-  100% {transform: translateX(-1500px)}
-}
 
-@keyframes bubbleUp {
-  100% {transform: translateY(-800px)}
-}
 
 .bubble-group1 {
 position: absolute;
-bottom: -10px;
+bottom: -2500px;
 left: 10%;
 background-color: solid #CECECE;
 opacity: .5;
@@ -85,7 +107,7 @@ border-radius: 50%;
 
 .bubble-group2 {
   position: absolute;
-  bottom: -10px;
+  bottom: -2500px;
   left: 35%;
   background-color: #CECECE;
   opacity: .5;
@@ -95,7 +117,7 @@ border-radius: 50%;
 
 .bubble-group3 {
   position: absolute;
-  bottom: -10px;
+  bottom: -25000px;
   left: 85%;
   background-color: #CECECE;
   opacity: .3;
@@ -105,7 +127,7 @@ border-radius: 50%;
 
 .bubble-group4 {
   position: absolute;
-  bottom: -10px;
+  bottom: -2500px;
   left: 60%;
   background-color: #CECECE;
   opacity: .55;
@@ -216,4 +238,16 @@ border-radius: 50%;
   animation: bubbleUp 5s infinite;
   background-color: #CECECE;
   border-radius: 50%;
+}
+/* bubble animations:
+*/
+
+@keyframes bubbleUp {
+  100% {transform: translateY(-800px)}
+}
+/* bubble animations end:
+*/
+@keyframes train {
+  0% {transform: translateX(320px)}
+  100% {transform: translateX(-1500px)}
 }
