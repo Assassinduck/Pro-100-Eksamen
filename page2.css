@@ -1,6 +1,9 @@
 html, body{
   margin: 0;
   padding: 0;
+  width: 1540px;
+  height:3000px;
+  background-attachment: scroll;
   overflow-x: hidden;
 }
 
@@ -51,7 +54,7 @@ footer {
 position:absolute;
 width: 250px;
 height: 250px;
-top: 2550px;
+top: 450px;
 left: 80%;
 background-color: red;
 animation: train 10s infinite;
@@ -75,8 +78,7 @@ animation: train 10s infinite;
 }
 
 #fish1 {
-  height: 50px;
-  width: 50px;
+
   background-image: "/fish1.png";
   top:200px;
   left:200px;
@@ -86,8 +88,7 @@ animation: train 10s infinite;
 Fish animation
 */
 
-.bg_landscape {
-}
+
 /* bubble animations:
 Delt inn i groups for å bestemme hvor boblene skal komme opp fra.
 ID for å endre på hver spesifikk boble.(størrelse, animation-timing)
