@@ -1,8 +1,11 @@
 html, body{
   margin: 0;
   padding: 0;
+  width: 1920px;
+  height:3000px;
   background-attachment: scroll;
 }
+
 
 body{
 }
@@ -76,6 +79,7 @@ z-index: 2;
 }
 /*train animtaion end:
 */
+
 .bg__underwater {
   background-image: url(eksamenpage2.png);
   height: 3000px;
@@ -97,12 +101,14 @@ Fish animation
 */
 
 
-/* bubble animations:
+/*
+Fish animation
+*/
+
+/*   bubbles
 Delt inn i groups for å bestemme hvor boblene skal komme opp fra.
 ID for å endre på hver spesifikk boble.(størrelse, animation-timing)
 */
-
-
 
 .bubble-group1 {
 position: absolute;
