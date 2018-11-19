@@ -1,8 +1,6 @@
 html, body{
   margin: 0;
   padding: 0;
-  width: 1920px;
-  height:3000px;
   background-attachment: scroll;
 }
 
@@ -32,7 +30,7 @@ footer {
     padding: 2rem;
 }
 
- .parallax [class*="bg__"] {
+ .parallax /* [class*="bg__"] */ {
   background-attachment: fixed;
   background-position: center center;
   background-size: contain;
