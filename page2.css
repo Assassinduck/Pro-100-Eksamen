@@ -1,0 +1,216 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 1540px;
+  height:3000px;
+  background-attachment: scroll;
+  overflow-x: hidden;
+}
+
+body{
+  background-color: #57BFAA;
+}
+
+#background-cont {
+  background-: url();
+}
+
+header {
+  margin: 0 auto;
+  position: absolute;
+  text-align: left;
+  /* z-index for at boblene skal gå under header */
+  z-index: 1;
+  color: #343E3D;
+  width: 500px;
+  padding: 100px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #343E3D;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+
+
+.trainTest {
+position:absolute;
+width: 250px;
+height: 250px;
+top: 450px;
+left: 80%;
+background-color: red;
+animation: train 10s infinite;
+}
+
+.fish {
+  position: absolute;
+}
+
+
+
+/* bubble animations:
+Delt inn i groups for å bestemme hvor boblene skal komme opp fra.
+ID for å endre på hver spesifikk boble.(størrelse, animation-timing)
+*/
+
+@keyframes train {
+  0% {transform: translateX(320px)}
+  100% {transform: translateX(-1500px)}
+}
+
+@keyframes bubbleUp {
+  100% {transform: translateY(-800px)}
+}
+
+.bubble-group1 {
+position: absolute;
+bottom: -10px;
+left: 10%;
+background-color: solid #CECECE;
+opacity: .5;
+border: 1px solid white;
+border-radius: 50%;
+}
+
+.bubble-group2 {
+  position: absolute;
+  bottom: -10px;
+  left: 35%;
+  background-color: #CECECE;
+  opacity: .5;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.bubble-group3 {
+  position: absolute;
+  bottom: -10px;
+  left: 85%;
+  background-color: #CECECE;
+  opacity: .3;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.bubble-group4 {
+  position: absolute;
+  bottom: -10px;
+  left: 60%;
+  background-color: #CECECE;
+  opacity: .55;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+  #bubble1 {
+  width: 30px;
+  height: 30px;
+  animation: bubbleUp 12s infinite;
+  animation-delay: 5s;
+  background-color: #CECECE;
+  border-radius: 50%;
+  left: 100px;
+}
+
+  #bubble2 {
+  width: 15px;
+  height: 15px;
+  animation: bubbleUp 16s infinite;
+  background-color: #CECECE;
+  border-radius: 50%;
+}
+
+#bubble3 {
+  width: 25px;
+  height: 25px;
+  animation: bubbleUp 11s infinite;
+  animation-delay: 1s;
+  background-color: #CECECE;
+  border-radius: 50%;
+}
+
+#bubble4 {
+  width: 30px;
+  height: 30px;
+  animation: bubbleUp 20s infinite;
+  animation-delay: 3s;
+  background-color: #CECECE;
+  border-radius: 55%;
+}
+
+#bubble5 {
+  width: 10px;
+  height: 10px;
+  animation: bubbleUp 18s infinite;
+  background-color: #CECECE;
+  border-radius: 45%;
+}
+
+#bubble6 {
+  width: 40px;
+  height: 40px;
+  animation: bubbleUp 15s infinite;
+  animation-delay: 1.5s
+  background-color: #CECECE;
+  border-radius: 50%;
+}
+
+#bubble7 {
+  width: 50px;
+  height: 50px;
+  animation: bubbleUp 13.4s infinite;
+  animation-delay: 3.5s;
+  background-color: #CECECE;
+  border-radius: 58%;
+}
+
+#bubble8 {
+  width: 25px;
+  height: 22px;
+  animation: bubbleUp 13s infinite;
+  background-color: #CECECE;
+  border-radius: 54%;
+}
+
+#bubble9 {
+  width: 20px;
+  height: 23px;
+  animation: bubbleUp 7s infinite;
+  animation-delay: 0.5s;
+  background-color: #CECECE;
+  border-radius: 50%;
+}
+
+#bubble10 {
+  width: 20px;
+  height: 23px;
+  animation: bubbleUp 9s infinite;
+  animation-delay: 0.9s;
+  background-color: #CECECE;
+  border-radius: 54%;
+}
+
+#bubble11 {
+  width: 15px;
+  height: 15px;
+  animation: bubbleUp 7s infinite;
+  animation-delay: 0.5s;
+  background-color: #CECECE;
+  border-radius: 50%;
+}
+
+#bubble12 {
+  width: 10px;
+  height: 10px;
+  animation: bubbleUp 5s infinite;
+  background-color: #CECECE;
+  border-radius: 50%;
+}
