@@ -3,6 +3,7 @@ html, body{
   padding: 0;
 }
 
+
 header{
     color: white;
     text-align: center;
@@ -35,7 +36,7 @@ li a{
     text-align: center;
     text-decoration: none;
     border-style: ridge;
-    border-color: #54CFFE;
+    border-color: #fff;
 }
 
 li a:hover:not(.active){
@@ -95,9 +96,10 @@ footer {
   width:  180px;
   position: absolute;
   opacity: 0.3;
+  z-index: 100;
 }
 
-div img#cloud1{
+img#cloud1{
   top:200px;
   left:1000px;
   
