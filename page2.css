@@ -1,6 +1,8 @@
 html, body{
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  height: 3000px;
 }
 
 
@@ -54,7 +56,6 @@ footer {
     color: white;
     text-align: center;
     padding: 2rem;
-    margin: 0;
 }
 
 
@@ -67,7 +68,6 @@ footer {
 }
 
 .underwater {
-  background-attachment: fixed;
   background-image: url(bg-underwater.png);
   background-repeat: no-repeat;
   height: 3000px;
@@ -76,9 +76,29 @@ footer {
 
 .sun {
   background-image: url(SUN.png);
-  top: 20;
-  z-index: 124;
+  height: 100px;
+  width: 100px;
+  top: 500px;
+  left: 50%;
+}
 
+.train {
+  background-image: url(tog.png);
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 2000px;
+  top: 2985px;
+  position: absolute;
+  animation: train 5s infinite;
+}
+
+.tunnel {
+  background-image: url(tunnel.png);
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 2000px;
+  top: 2800px;
+  position: absolute;
 }
 
 
@@ -102,7 +122,7 @@ footer {
 img#cloud1{
   top:200px;
   left:1000px;
-  
+
 }
 
 #cloud2{
@@ -292,67 +312,4 @@ border-radius: 50%;
 @keyframes train {
   0% {left:2300px} /*left:2300pxtransform: translateX(320px)*/
   100% {left:-1000px} /*{transform: translateX(-1500px)*/
-}
-
-
-
-
-
-
-* {
-    box-sizing: border-box;
-}
-
-html,
-body {
-    background-color: #fedcc8;
-}
-
-/*
-.parallax {
-    perspective: 100px;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    right: 0;
-    bottom: 0;
-    margin-left: -1500px;
-    z-index:4;
-}
-
-.parallax__layer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    img {
-        display: block;
-        position: absolute;
-        bottom: 0;
-    }
-}
-
-.parallax__cover {
-    background: #2d112b;
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    height: 2000px;
-    z-index: 2;
-}
-
-$parallax__layers: 6;
-
-@for $i from 0 through $parallax__layers {
-    $x: ($parallax__layers - $i) / 2;
-    .parallax__layer__#{$i} {
-        transform: translateZ(-100 * $x#{px}) scale($x + 1);
-    }
 }
