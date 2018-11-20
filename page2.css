@@ -76,6 +76,8 @@ footer {
 }
 
 
+
+
 /*train:
 */
 .train {
@@ -111,6 +113,24 @@ z-index: 2;
 }
 /*train animtaion end:
 */
+
+.cloud{
+  height: 20px;
+  width:  180px;
+  position: absolute;
+  opacity: 0.3;
+}
+
+div img#cloud1{
+  top:200px;
+  left:1000px;
+  
+}
+
+#cloud2{
+
+}
+
 
 
 div.fish{
@@ -295,3 +315,5 @@ border-radius: 50%;
   0% {left:2300px} /*left:2300pxtransform: translateX(320px)*/
   100% {left:-1000px} /*{transform: translateX(-1500px)*/
 }
+
+
