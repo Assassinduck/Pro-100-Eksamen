@@ -3,9 +3,6 @@ html, body{
   padding: 0;
 }
 
-body {
-}
-
 header{
     color: white;
     text-align: center;
@@ -78,7 +75,6 @@ footer {
 
 .sun {
   background-image: url(SUN.png);
-  radius: 50px;
   top: 20;
   z-index: 124;
 
