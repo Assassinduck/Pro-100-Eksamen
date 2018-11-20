@@ -61,21 +61,18 @@ footer {
     padding: 2rem;
 }
 
-/*
-.parallax {
-  height: auto;
-  width: auto;
-  background-attachment: fixed;
-  background-position: center center;
-}
 
-*/
+
 .landscape {
   background-attachment: fixed;
   background-image: url(landscape_fixed.png);
   height: 500px;
+  width: 100%;
+
   background-size: cover;
   background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
 }
 
 .underwater {
@@ -84,18 +81,19 @@ footer {
   background-size: cover;
   height:3000px;
   width: auto;
+  z-index: 3;
 }
 
 .sun {
   background-image: url("sun ferdig.png");
-  height: 500px;
-  width: 500px;
-  position: absolute;
-  top: 0;
-  left: 50%;
+  height: 350px;
+  width: 350px;
+  position: fixed;
+  top: 200px;
+  left: 37.5%;
   background-size: contain;
   background-repeat:no-repeat;
-  z-index: -1;
+  z-index: 1;
 }
 
 /*
