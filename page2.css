@@ -95,6 +95,7 @@ footer {
   left: 50%;
   background-size: contain;
   background-repeat:no-repeat;
+  z-index: -1;
 }
 
 /*
