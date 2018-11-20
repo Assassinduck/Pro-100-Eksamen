@@ -85,16 +85,19 @@ footer {
   height:3000px;
   width: auto;
 }
-/*
+
 .sun {
-  background-image: url(SUN.png);
-  height: 100px;
-  width: 100px;
-  top: 500px;
+  background-image: url("sun ferdig.png");
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  top: 0;
   left: 50%;
+  background-size: contain;
+  background-repeat:no-repeat;
 }
 
-
+/*
 .train {
   background-image: url(tog.png);
   background-repeat: no-repeat;
