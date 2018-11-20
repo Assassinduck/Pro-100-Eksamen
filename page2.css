@@ -11,7 +11,7 @@ body {
 header{
     color: white;
     text-align: center;
-    background-color: rgb(0,165,225);
+    background-color: #54CFFE;
     margin: 0;
     overflow-y: hidden;
 }
@@ -40,11 +40,11 @@ li a{
     text-align: center;
     text-decoration: none;
     border-style: ridge;
-    border-color: cornflowerblue;
+    border-color: #54CFFE;
 }
 
 li a:hover:not(.active){
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #54CFFE;
 }
 
 .active{
@@ -84,7 +84,7 @@ background-repeat: no-repeat;
 position: absolute;
 width: 600px;
 height: 250px;
-top: 2640px;
+top: 2700px;
 left: 80%;
 animation: train 6s infinite;
 z-index: 2;
@@ -95,7 +95,7 @@ z-index: 2;
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  bottom: -2052px;
+  bottom: -2148px;
   left: -230px;
   height: 210px;
   width: 2200px;
@@ -115,15 +115,16 @@ z-index: 2;
 
 div.fish{
   height: 15px;
-  widows: 30px;
-  position: absolute;
+  width: 30px;
+  position:absolute;
+  bottom: 0px;
 }
 #fish1 {
 
   background-image: "/fish1.png";
-  top:200px;
-  left:200px;
-  z-index: 10;
+
+
+
 }
 /*
 Fish animation
