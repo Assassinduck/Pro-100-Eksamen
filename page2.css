@@ -1,17 +1,20 @@
-html, body{
+html{
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  height: 3000px;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
 header{
     color: white;
     text-align: center;
     background-color: #54CFFE;
     margin: 0;
-    overflow-y: hidden;
 }
 
 
@@ -58,7 +61,15 @@ footer {
     padding: 2rem;
 }
 
+/*
+.parallax {
+  height: auto;
+  width: auto;
+  background-attachment: fixed;
+  background-position: center center;
+}
 
+*/
 .landscape {
   background-attachment: fixed;
   background-image: url(landscape.png);
@@ -70,10 +81,11 @@ footer {
 .underwater {
   background-image: url(bg-underwater.png);
   background-repeat: no-repeat;
-  height: 3000px;
-  width:100%;
+  background-size: cover;
+  height:3000px;
+  width: auto;
 }
-
+/*
 .sun {
   background-image: url(SUN.png);
   height: 100px;
@@ -82,12 +94,13 @@ footer {
   left: 50%;
 }
 
+
 .train {
   background-image: url(tog.png);
   background-repeat: no-repeat;
   height: 200px;
   width: 2000px;
-  top: 2985px;
+  top: 2950px;
   position: absolute;
   animation: train 5s infinite;
 }
@@ -100,7 +113,7 @@ footer {
   top: 2800px;
   position: absolute;
 }
-
+*/
 
 /*train animtaion:
 */
@@ -108,53 +121,16 @@ footer {
   0% {left: 2300px}
   100% {left: -1000px}
 }
-/*train animtaion end:
-*/
-
-.cloud{
-  height: 20px;
-  width:  180px;
-  position: absolute;
-  opacity: 0.3;
-  z-index: 100;
-}
-
-img#cloud1{
-  top:200px;
-  left:1000px;
-
-}
-
-#cloud2{
-
-}
 
 
-
-div.fish{
-  height: 15px;
-  width: 30px;
-  position:absolute;
-  bottom: 0px;
-}
-#fish1 {
-
-  background-image: "/fish1.png";
-
-
-
-}
 /*
 Fish animation
 */
-
 
 /* bubble animations:
 Delt inn i groups for å bestemme hvor boblene skal komme opp fra.
 ID for å endre på hver spesifikk boble.(størrelse, animation-timing)
 */
-
-
 
 .bubble-group1 {
 position: absolute;
