@@ -37,11 +37,11 @@ li a{
     text-align: center;
     text-decoration: none;
     border-style: ridge;
-    border-color: #fff;
+    border-color: #54CFFE;
 }
 
 li a:hover:not(.active){
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #54CFFE;
 }
 
 .active{
@@ -110,18 +110,37 @@ footer {
 /*train animtaion end:
 */
 
+.cloud{
+  height: 20px;
+  width:  180px;
+  position: absolute;
+  opacity: 0.3;
+}
+
+div img#cloud1{
+  top:200px;
+  left:1000px;
+
+}
+
+#cloud2{
+
+}
+
+
 
 div.fish{
   height: 15px;
-  widows: 30px;
-  position: absolute;
+  width: 30px;
+  position:absolute;
+  bottom: 0px;
 }
 #fish1 {
 
   background-image: "/fish1.png";
-  top:200px;
-  left:200px;
-  z-index: 10;
+
+
+
 }
 /*
 Fish animation
