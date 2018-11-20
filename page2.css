@@ -97,14 +97,13 @@ footer {
 }
 
 
-.background-color {
-  background-color: rgb(0, 200, 255);
+.something{
+  background-image: url("/something.png");
   position: absolute;
-  height: 570px;
+  height: 500px;
   width: 100%;
-  top: 0;
-  left: 0;
   z-index: 0;
+
 }
 
 .train {
