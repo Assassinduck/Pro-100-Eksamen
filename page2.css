@@ -96,15 +96,14 @@ footer {
   z-index: 1;
 }
 
-/*
-.background-color {
-  background-color: rgb(0, 200, 255);
+
+.something{
+  background-image: url("/something.png");
   position: absolute;
-  height: 570px;
+  height: 500px;
   width: 100%;
-  top: 0;
-  left: 0;
   z-index: 0;
+
 }
 */
 .train {
@@ -121,8 +120,8 @@ footer {
   background-image: url(tunnel.png);
   background-repeat: no-repeat;
   height: 200px;
-  width: 2000px;
-  top: 2650px;
+  width: 2300px;
+  top: 2670px;
   position: absolute;
 }
 
