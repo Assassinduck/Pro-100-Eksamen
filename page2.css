@@ -124,6 +124,140 @@ footer {
   z-index: 5;
 }
 
+.fish-hideout {
+  position: absolute;
+  height: 2510px;
+  width: 1500px;
+  left: 1540px;
+  top: 615px;
+  background-color: #0187BA;
+}
+
+/*Stilsetting rød fisker som svømmer fra venstre */
+.redfishLeft{
+    position: absolute;
+    left: -550px;
+    top: 700px;
+    width: 20px;
+    animation: fishLeft 15s ease forwards;
+}
+
+#redfishLeft1{
+    top: 710px;
+    left: -700px;
+    animation-delay: 1s;
+}
+
+#redfishLeft2{
+    top: 730px;
+    animation-delay: 1.2s;
+    left: -500px;
+}
+
+#redfishLeft3{
+    top: 720px;
+    animation-delay: 0.5s;
+    left: -600px;
+}
+
+#redfishLeft4 {
+  top: 740px;
+  left: -500px;
+}
+/*SLutt Stilsetting rød fisker som svømmer fra venstre */
+
+/*Stilsetting av Røde fisker som svømmer fra høyre */
+.redfishRight{
+    position: absolute;
+    left: 20000px;
+    top: 2400px;
+    width: 20px;
+    animation:  25s fishRight ease forwards;
+    transform: scaleX(-1);
+    animation-delay: 3s;
+}
+#redfishRight1{
+  top: 2410px;
+    left: 2010px;
+}
+
+#redfishRight2{
+    left: 2020px;
+}
+
+#redfishRight3{
+  top: 2390px;
+    left: 2000px;
+}
+
+#redfishRight4{
+    left: 1990px;
+}
+/*Slutt stilsetting av Røde fisker som svømmer fra høyre */
+
+/*Stilsetting av Grå fisk som svømmer fra venstre */
+.greyfishLeft{
+    position: absolute;
+    top: 1500px;
+    left: -200px;
+    width: 40px;
+    opacity: 0.5;
+    animation: fishLeft 30s ease forwards;
+}
+
+#greyfishLeft1{
+    top: 1560px;
+    animation-delay: 13s;
+}
+
+#greyfishLeft2{
+    top: 1500px;
+    animation-delay: 3s;
+}
+
+#greyfishLeft3{
+    top: 1600px;
+    animation-delay: 20s;
+    }
+
+#greyfishLeft4{
+    top: 1900px;
+}
+
+.greyfishLeft:hover{
+    opacity: 1;
+}
+
+/*Stilsetting av Grå fisker som svømmer fra høyre */
+.greyfishRight{
+    position: absolute;
+    left: 2000px;
+    width: 40px;
+    opacity: 0.5;
+    transform: scaleX(-1);
+    animation: fishRight 30s ease forwards;
+}
+
+#greyfishRight1{
+    top: 1550px;
+    animation-delay: 15s;
+}
+#greyfishRight2{
+    top: 1530px;
+    animation-delay: 5s;
+}
+#greyfishRight3{
+    top: 1600px;
+    animation-delay: 1s;
+}
+#greyfishRight4{
+    top: 700px;
+    animation-delay: 10s;
+}
+
+.greyfishRight:hover{
+    opacity: 1;
+}
 
 /*train animtaion:
 */
@@ -137,6 +271,20 @@ footer {
 /*
 Fish animation
 */
+
+
+/*Keyframes til annimasjon av fiskene */
+ @keyframes fishRight{
+0% {left: 1530px:}
+100% {left: -600px;}
+}
+
+ @keyframes fishLeft{
+0% {left: 0px;}
+100% {left: 2100px;}
+}
+/*Slutt Keyframes til annimasjon av fiskene *
+
 
 /* bubble animations:
 Delt inn i groups for å bestemme hvor boblene skal komme opp fra.
