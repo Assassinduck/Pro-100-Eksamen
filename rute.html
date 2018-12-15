@@ -1,0 +1,111 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="ruter.css">
+    <title>Rutekart - U-banen</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <header>
+        <div class="head-wrap">
+            <h1>RUTEKART OVER DEN NYE RUTEN</h1>
+            <a href="forside.html">
+                <img id="logo" src="bilder/Ubane-logo.png">
+            </a>
+        </div>
+
+        <!-- Navbar med linker til de andre sidene -->
+        <ul>
+            <div class="navbar">
+                <nav>
+                    <li><a href="/forside.html">Hjem</a></li>
+                    <li><a href="/page2.html">Attraksjon</a></li>
+                    <li><a href="/infoside.html">Informasjon</a></li>
+                    <li><a class="active" href="/rute.html">Rutekart</a></li>
+                    <li><a href="/side3.html">Stasjonene</a></li>
+                </nav>
+            </div>
+        </ul>
+    </header>
+
+    <!-- Container for å holde kartet -->
+    <div id="train-route-container">
+
+        <!-- Knapen for å kjøre toget -->
+        <input id="drive-train-button" type="button" value="Trykk for å kjøre banen" onclick="history.go(0)" />
+
+        <!-- Bildet av kjørende vogn -->
+        <img id="train" src="bilder/tog.png">
+
+
+        <!--Ikoner for stoppeplasser -->
+        <div id="nationaltheatret-container">
+            <img class="u-bane-stop" id="nationaltheatret" src="bilder/Stoppested-ikon.png">
+            <div class="text">Nationaltheatret</div>
+        </div>
+
+        <div id="jernbanetorget-container">
+            <img class="u-bane-stop" id="jernbanetorget" src="bilder/Stoppested-ikon.png">
+            <div class="text">Jernbanetorget</div>
+        </div>
+
+        <div id="vippetangen-container">
+            <img class="u-bane-stop" id="vippetangen" src="bilder/Stoppested-ikon.png">
+            <div class="text">Vippetangen</div>
+        </div>
+
+        <div id="hovedoya-container">
+            <img class="u-bane-stop" id="hovedoya" src="bilder/Stoppested-ikon.png">
+            <div class="text">Hovedøya</div>
+        </div>
+
+        <div id="lindoya-container">
+            <img class="u-bane-stop" id="lindoya" src="bilder/Stoppested-ikon.png">
+            <div class="text">Lindøya</div>
+        </div>
+
+        <div id="nakholmen-container">
+            <img class="u-bane-stop" id="nakholmen" src="bilder/Stoppested-ikon.png">
+            <div class="text">Nakholmen</div>
+        </div>
+
+        <div id="huk-container">
+            <img class="u-bane-stop" id="huk" src="bilder/Stoppested-ikon.png">
+            <div class="text">Huk</div>
+        </div>
+
+        <div id="paradisbukta-container">
+            <img class="u-bane-stop" id="paradisbukta" src="bilder/Stoppested-ikon.png">
+            <div class="text">Paradisbukta</div>
+        </div>
+
+        <div id="vikingskipmuseet-container">
+            <img class="u-bane-stop" id="vikingskipmuseet" src="bilder/Stoppested-ikon.png">
+            <div class="text">Vikingskipmuseet</div>
+        </div>
+
+        <div id="frammuseet-container">
+            <img class="u-bane-stop" id="frammuseet" src="bilder/Stoppested-ikon.png">
+            <div class="text">Frammuseet</div>
+        </div>
+
+        <div id="filipstadkaia-container">
+            <img class="u-bane-stop" id="filipstadkaia" src="bilder/Stoppested-ikon.png">
+            <div class="text">Filipstadkaia</div>
+        </div>
+
+        <div id="aker-brygge-container">
+            <img class="u-bane-stop" id="aker-brygge" src="bilder/Stoppested-ikon.png">
+            <div class="text">Aker brygge</div>
+        </div>
+        <!-- Ikoner for stoppeplasser, slutt -->
+
+    </div>
+</body>
+<footer>&copy; U-banen, PowerHouse Copyright 2018 Egenproduserte bilder</footer>
+
+</html>

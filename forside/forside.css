@@ -1,0 +1,296 @@
+html, body{
+     margin: 0;
+}
+            
+#FrontPage{
+    width: 2000px;
+    height: 2000px;
+    overflow: hidden;
+    position: absolute;
+    
+}
+            
+#Front-headline{
+    position: fixed;
+    width: 800px;
+    height: 125px;
+    background-color: rgb(a);
+    left: 350px;
+    border-style: ridge;
+    border-color: #3BCFE2;
+    z-index: 1;
+} 
+            
+#FrontPage-background{
+    width: 3000px;
+    position: absolute; 
+}
+            
+#Front-HeadFont{
+    position: absolute;
+    left: 300px;
+    color: white;
+}
+
+#Front-UnderheadFont{
+    position: absolute;
+    left: 280px;
+    top: 45px;
+    color: white;
+}
+
+
+            
+/* start navigasjonsbar */
+           
+ul{
+    list-style-type: none;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 1rem;
+    overflow: hidden; 
+    margin-bottom: 0;
+    position: relative;
+    top: 90px;
+}
+
+li{
+    float: left;
+    min-width: 20%;
+    max-width: 100%;
+}
+
+li a{
+    padding: 1rem;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-style: ridge;
+    border-color: #3BCFE2;
+}
+
+li a:hover:not(.active){
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.active{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+/*slutt navigasjonsbar */
+            
+#Front-Logo{
+    width: 100px;
+    position: absolute;
+    left: 600px;
+}
+            
+#Front-Logo:hover{
+    filter: brightness(130%);
+}
+            
+/* footer nederst på siden */
+footer{
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 96%;
+    z-index: 2;
+}
+
+#Front-body{
+    width: 1000px;
+    position: absolute;
+}
+
+#FrontPagePicture{
+    width: 600px;
+    position: fixed;
+    left: 450px;
+    top: 200px;
+    border-style: ridge;
+    border-color: cornflowerblue;
+    z-index: 1;
+    transition-property: all; 
+    transition-duration: 2s;
+}
+
+#FrontPagePicture:hover{
+    width: 625px;
+    left: 437.5px;
+    
+}
+            
+#iframeAudio{
+    display: none;
+}
+
+/*Stilsetting av Grå fisk som svømmer fra venstre */
+.greyfishLeft{
+    position: relative;
+    left: -200px;
+    width: 40px;
+    opacity: 0.5;
+    animation: fishLeft 30s ease forwards;
+}
+            
+#greyfishLeft1{
+    top: 100px;
+    animation-delay: 13s;
+}
+            
+#greyfishLeft2{
+    top: 300px;
+    animation-delay: 3s;
+}
+            
+#greyfishLeft3{
+    top: 500px;
+    animation-delay: 20s;
+    } 
+            
+#greyfishLeft4{
+    top: 900px;
+}
+
+.greyfishLeft:hover{
+    opacity: 1;
+}
+
+/*slutt stilsetting av Grå fisker som svømmer fra venstre */
+
+/*Stilsetting rød fisker som svømmer fra venstre */
+.redfishLeft{
+    position: relative;
+    left: -200px;
+    top: 750px;
+    width: 20px;
+    animation: fishLeft 15s ease forwards;
+}
+            
+#redfishLeft1{
+    top: 710px;
+}
+            
+#redfishLeft2{
+    top: 730px;
+}
+            
+#redfishLeft3{
+    top: 720px;
+}
+/*SLutt Stilsetting rød fisker som svømmer fra venstre */
+
+/*Stilsetting av Grå fisker som svømmer fra høyre */
+.greyfishRight{
+    position: relative;
+    left: 2000px;
+    width: 40px;
+    opacity: 0.5;
+    transform: scaleX(-1);
+    animation: fishRight 30s ease forwards;
+}
+            
+#greyfishRight1{
+    top: 50px;
+    animation-delay: 15s;
+}
+#greyfishRight2{
+    top: 230px;
+    animation-delay: 5s;
+}
+#greyfishRight3{
+    top: 550px;
+    animation-delay: 1s;
+}
+#greyfishRight4{
+    top: 700px;
+    animation-delay: 10s;
+}
+
+.greyfishRight:hover{
+    opacity: 1;
+}
+
+/*Slutt Stilsetting av Grå fisker som svømmer fra høyre */
+
+/*Stilsetting av Røde fisker som svømmer fra høyre */
+.redfishRight{
+    position: relative;
+    left: 2000px;
+    top: 400px;
+    width: 20px;
+    animation:  25s fishRight ease forwards;
+    transform: scaleX(-1);
+    animation-delay: 17s;
+}
+#redfishRight1{ 
+    top: 400px;
+}
+            
+#redfishRight2{
+    top:410px;
+}
+            
+#redfishRight3{
+    top:390px;
+}
+            
+#redfishRight4{
+    top:415px;
+}
+/*Slutt stilsetting av Røde fisker som svømmer fra høyre */
+
+#jelly{
+    position: absolute;
+    left: 300px;
+    top: 2000px;
+    width: 50px;
+    animation: 30s jellyUp ease forwards;
+}
+
+/*keyframes for animasjon av JellyFish */
+@keyframes jellyUp{
+    0%{top: 2000px;
+       left: 300px;}
+    10%{top: 1819px;
+        left: 330px;}
+    20%{top: 1638px;
+        left: 270px;}
+    30%{top: 1475px;
+        left: 330px;}
+    40%{top: 1276px;
+        left: 270px;}
+    50%{top: 1095px;
+        left: 330px;}
+    60%{top: 914px;
+        left: 270px;}
+    70%{top: 733px;
+        left: 330px;}
+    80%{top: 552px;
+        left: 270px;}
+    90%{top: 371px;
+        left: 330px;}
+    95%{top: 190;
+         left: 270px;}
+    100%{top: -100px;
+         left: 330px;}
+}
+
+
+/*Keyframes til annimasjon av fiskene */
+ @keyframes fishRight{
+0% {left: 1530px}
+100% {left: -600px;}
+}
+            
+ @keyframes fishLeft{
+0% {left: 0px}
+100% {left: 2100px;}
+}
+/*Slutt Keyframes til annimasjon av fiskene */
+
+

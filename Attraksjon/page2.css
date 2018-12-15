@@ -1,0 +1,457 @@
+html{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header{
+    color: white;
+    text-align: center;
+    background-color: #54CFFE;
+    margin: 0;
+    position: relative;
+}
+
+
+ul{
+    list-style-type: none;
+    margin-left: 120px;
+    margin-right: 120px;
+    padding: 1rem;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+}
+
+li{
+    float: left;
+    min-width: 20%;
+    max-width: 100%;
+}
+
+li a{
+    padding: 1rem;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-style: ridge;
+    border-color: #fff;
+}
+
+li a:hover:not(.active){
+    background-color: #54CFFE;
+}
+
+.active{
+    background-color: rgba(0,0,0,0.3);
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    background-color: #343E3D;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+.landscape {
+  background-attachment: fixed;
+  background-image: url(/Attraksjon/landscape_fixed_for_real.png);
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+}
+
+.underwater {
+  background-image: url(/Attraksjon/bg-underwater.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 3000px;
+  width: auto;
+  z-index: 3;
+}
+
+.sun {
+  background-image: url(/Attraksjon/sunferdig.png);
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  top: 150px;
+  left: 625px;
+  background-size: contain;
+  background-repeat:no-repeat;
+  z-index: 1;
+}
+
+.sky{
+  background-image: url("/Attraksjon/something.png");
+  position: absolute;
+  height: 500px;
+  width: 100%;
+  z-index: 0;
+}
+
+.train {
+  background-image: url(/Attraksjon/tog.png);
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 2000px;
+  top: 2800px;
+  position: absolute;
+  animation: train 5s infinite;
+}
+
+.tunnel {
+  background-image: url(/Attraksjon/tunnel.png);
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 2000px;
+  top: 2780px;
+  left: -50px;
+  position: absolute;
+  z-index: 5;
+}
+
+.fish-hideout {
+  position: absolute;
+  height: 2510px;
+  width: 1500px;
+  left: 1540px;
+  top: 615px;
+  background-color: #0187BA;
+}
+
+/*Stilsetting rød fisker som svømmer fra venstre */
+.redfishLeft{
+    position: absolute;
+    left: -550px;
+    top: 700px;
+    width: 20px;
+    animation: fishLeft 15s ease forwards;
+    animation-iteration-count: infinite;
+}
+
+#redfishLeft1{
+    top: 710px;
+    left: -700px;
+    animation-delay: 1s;
+}
+
+#redfishLeft2{
+    top: 730px;
+    animation-delay: 1.2s;
+    left: -500px;
+}
+
+#redfishLeft3{
+    top: 720px;
+    animation-delay: 0.5s;
+    left: -600px;
+}
+
+#redfishLeft4 {
+  top: 740px;
+  left: -500px;
+}
+/*SLutt Stilsetting rød fisker som svømmer fra venstre */
+
+/*Stilsetting av Røde fisker som svømmer fra høyre */
+.redfishRight{
+    position: absolute;
+    left: 20000px;
+    top: 2400px;
+    width: 20px;
+    animation:  25s fishRight ease forwards;
+    transform: scaleX(-1);
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+#redfishRight1{
+  top: 2410px;
+    left: 2010px;
+    animation-delay: 0.7s;
+}
+
+#redfishRight2{
+    left: 2020px;
+    animation-delay: 1s;
+}
+
+#redfishRight3{
+  top: 2390px;
+    left: 2000px;
+    animation-delay: 1.3s;
+}
+
+#redfishRight4{
+    left: 1990px;
+}
+/*Slutt stilsetting av Røde fisker som svømmer fra høyre */
+
+/*Stilsetting av Grå fisk som svømmer fra venstre */
+.greyfishLeft{
+    position: absolute;
+    top: 1500px;
+    left: -200px;
+    width: 40px;
+    opacity: 0.5;
+    animation: fishLeft 30s ease forwards;
+    animation-iteration-count: infinite;
+}
+
+#greyfishLeft1{
+    top: 1560px;
+    animation-delay: 13s;
+}
+
+#greyfishLeft2{
+    top: 1500px;
+    animation-delay: 3s;
+}
+
+#greyfishLeft3{
+    top: 1600px;
+    animation-delay: 20s;
+    }
+
+#greyfishLeft4{
+    top: 1900px;
+}
+
+.greyfishLeft:hover{
+    opacity: 1;
+}
+
+/*Stilsetting av Grå fisker som svømmer fra høyre */
+.greyfishRight{
+    position: absolute;
+    left: 2000px;
+    width: 40px;
+    opacity: 0.5;
+    transform: scaleX(-1);
+    animation: fishRight 30s ease forwards;
+    animation-iteration-count: infinite;
+}
+
+#greyfishRight1{
+    top: 1550px;
+    animation-delay: 15s;
+}
+#greyfishRight2{
+    top: 1530px;
+    animation-delay: 5s;
+}
+#greyfishRight3{
+    top: 1600px;
+    animation-delay: 1s;
+}
+#greyfishRight4{
+    top: 700px;
+    animation-delay: 10s;
+}
+
+.greyfishRight:hover{
+    opacity: 1;
+}
+
+
+/*train animtaion:
+*/
+@keyframes train {
+  0% {left: 2300px}
+  100% {left: -1000px}
+}
+
+
+
+/*
+Fish animation
+*/
+/*Keyframes til annimasjon av fiskene */
+@keyframes fishRight{
+  0% {left: 1530px}
+  100% {left: -600px;}
+  }
+  
+   @keyframes fishLeft{
+  0% {left: 0px;}
+  100% {left: 2100px;}
+  }
+  /*Slutt Keyframes til annimasjon av fiskene *
+  
+  
+
+/* bubble animations:
+Delt inn i groups for å bestemme hvor boblene skal komme opp fra.
+ID for å endre på hver spesifikk boble.(størrelse, animation-timing)
+*/
+
+.bubble-group1 {
+position: absolute;
+bottom: -2100px;
+left: 10%;
+background-color: solid #CECECE;
+opacity: .4;
+border: 1px solid white;
+border-radius: 50%;
+}
+
+.bubble-group2 {
+  position: absolute;
+  bottom: -2100px;
+  left: 35%;
+  background-color: #CECECE;
+  opacity: .4;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.bubble-group3 {
+  position: absolute;
+  bottom: -2100px;
+  left: 85%;
+  background-color: #CECECE;
+  opacity: .3;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.bubble-group4 {
+  position: absolute;
+  bottom: -2100px;
+  left: 60%;
+  background-color: #CECECE;
+  opacity: .35;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+  #bubble1 {
+  width: 30px;
+  height: 30px;
+  animation: bubbleUp 12s infinite;
+  animation-delay: 5s;
+  background-color: #CECECE;
+  border-radius: 50%;
+  left: 100px;
+}
+
+  #bubble2 {
+  width: 15px;
+  height: 15px;
+  animation: bubbleUp 16s infinite;
+  background-color: #CECECE;
+  border-radius: 50%;
+}
+
+#bubble3 {
+  width: 25px;
+  height: 25px;
+  animation: bubbleUp 11s infinite;
+  animation-delay: 1s;
+  background-color: #CECECE;
+  border-radius: 50%;
+}
+
+#bubble4 {
+  width: 30px;
+  height: 30px;
+  animation: bubbleUp 20s infinite;
+  animation-delay: 3s;
+  background-color: #CECECE;
+  border-radius: 55%;
+}
+
+#bubble5 {
+  width: 10px;
+  height: 10px;
+  animation: bubbleUp 18s infinite;
+  background-color: #CECECE;
+  border-radius: 45%;
+}
+
+#bubble6 {
+  width: 40px;
+  height: 40px;
+  animation: bubbleUp 15s infinite;
+  animation-delay: 1.5s;
+  background-color: #CECECE;
+  border-radius: 50%;
+}
+
+#bubble7 {
+  width: 50px;
+  height: 50px;
+  animation: bubbleUp 13.4s infinite;
+  animation-delay: 3.5s;
+  background-color: #CECECE;
+  border-radius: 58%;
+}
+
+#bubble8 {
+  width: 25px;
+  height: 22px;
+  animation: bubbleUp 13s infinite;
+  background-color: #CECECE;
+  border-radius: 54%;
+}
+
+#bubble9 {
+  width: 20px;
+  height: 23px;
+  animation: bubbleUp 7s infinite;
+  animation-delay: 0.5s;
+  background-color: #CECECE;
+  border-radius: 50%;
+}
+
+#bubble10 {
+  width: 20px;
+  height: 23px;
+  animation: bubbleUp 9s infinite;
+  animation-delay: 0.9s;
+  background-color: #CECECE;
+  border-radius: 54%;
+}
+
+#bubble11 {
+  width: 15px;
+  height: 15px;
+  animation: bubbleUp 7s infinite;
+  animation-delay: 0.5s;
+  background-color: #CECECE;
+  border-radius: 50%;
+}
+
+#bubble12 {
+  width: 10px;
+  height: 10px;
+  animation: bubbleUp 5s infinite;
+  background-color: #CECECE;
+  border-radius: 50%;
+}
+/* bubble animations:
+*/
+
+@keyframes bubbleUp {
+  100% {transform: translateY(-2195px);}
+}
+/* bubble animations end:
+*/
+
+@keyframes train {
+  0% {left:2300px} 
+  100% {left:-1000px}
+}

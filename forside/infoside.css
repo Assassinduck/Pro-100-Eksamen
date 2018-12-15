@@ -1,0 +1,405 @@
+/* stilsetting av Info Side */
+
+html, body{
+   margin: 0;
+    overflow-x: hidden;
+   
+   
+ }
+            
+#InfoSite{
+    position: absolute;
+    width: 1525px;
+    height: 2000px;
+   overflow: hidden;
+}
+
+#Info-Background{
+    width: 4000px;
+    position: absolute;
+}
+  
+#Info-Headline{
+    position: absolute;
+    width: 1500px;
+    height: 200px;
+    background-color: rgb(a);
+    left: 5px;
+    z-index: 1;
+} 
+    
+#Info-Head-Font{
+    position: absolute;
+    left: 600px;
+    color: white;
+}
+            
+#Info-Underhead-Font{
+    position: absolute;
+    left: 680px;
+    top: 45px;
+    color: white;
+}
+
+ /* start navigasjonsbar */
+ul{
+    list-style-type: none;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 1rem;
+    overflow: hidden;
+    margin-bottom: 0;
+    position: relative;
+    top: 90px;
+}
+
+li{
+    float: left;
+    min-width: 20%;
+    max-width: 100%;  
+}
+
+li a{
+    padding: 1rem;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-style: ridge;
+    border-color: #3BCFE2;
+}
+
+li a:hover:not(.active){
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.active{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+/*slutt navigasjonsbar */
+
+/*stilsetting av Logo */
+#Info-logo{
+    width: 100px;
+    position: absolute;
+    left: 900px;
+}
+            
+#Info-logo:hover{
+filter: brightness(130%);
+}
+/*Slutt stilsetting Logo */
+
+/*stilsetting av info boxer*/
+.Info-boxes{
+    width: 1300px;
+    height: 300px;
+    position: absolute;
+    border-color: rgb(59, 207, 226);
+    text-align: center;
+    vertical-align: middle;
+    border-style: ridge;
+    padding: 1rem;
+    
+    background-color: rgba(0, 0, 0, 0.3);
+    
+}
+
+.Info-boxes:hover{
+    background-color: rgba(0, 0, 50, 0.3);
+}
+
+/* stilsetting av kapittel overskrifter */
+.UnderHeading{
+    position: absolute;
+    color: aliceblue;
+    font-size: 25px;
+    left: 500px;
+    top: 0;
+}
+/*Stilsetting av Info Tekst i boksene */
+.InfoTekst{
+    position: absolute;
+    left: 450px;
+    font-size: 20px;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 1rem;
+    margin-top: 50px;
+}
+
+/* Stilsetting av info Undervannstunnel */
+#WaterTunnel{
+    left: 100px;
+    top: 210px;
+}
+  
+#WTtekst1{
+    margin-top: 100px;
+}  
+#glassTunnel{
+    position: absolute;
+    width: 350px;
+    left: 15px;
+    bottom: 10px; 
+    border-right-style: double;
+    border-color: cornflowerblue;
+}
+
+/*slutt stilsetting av info om Undervannstunellen */
+
+/* Stilsetting av info tekst til Selvstyring */
+#SelfDrive{
+    left: 100px;
+    top: 560px;
+}
+      
+#SDtekst{
+    left: 600px;
+    top: 45px;
+}
+    
+#Advantages-List{
+    position: absolute;
+    left: 650px;
+    top: 120px;
+    color: aliceblue;
+    font-size: 20px; 
+    padding: 1rem;
+}
+#cockpit{
+    position: absolute;
+    width: 350px;
+    left: 20px;
+    top: 40px;
+    border-style: solid;
+}
+/*slutt stilsetting av info om Selvstyring */
+
+ /* Stilsetting av info tekst til Wifi*/
+#WIFI{
+    left: 100px;
+    top: 910px;
+}
+#ticket{
+    position: absolute;
+    width: 150px;
+    left: 50px;
+    top: 100px;
+}
+#picture-wifi{
+    position: absolute;
+    width: 100px;
+    top: 135px;
+    left: 200px;
+}
+/*slutt stilsetting av info om Wifi */
+
+ /* Stilsetting av info  HologramSkjerm*/
+#Screen{
+    left: 100px;
+    top: 1260px;
+}
+#holoScreen{
+    position: absolute;
+    width: 150px; 
+    bottom: 100px;
+    left: 30px;
+}
+    
+#knapper{
+    position: absolute;
+    width: 250px;
+    bottom: 50px;
+    left: 150px;
+}
+/*slutt stilsetting av info om Hologramskjerm */
+
+
+  /* Stilsetting av info om til Komfort*/
+#Komfort{
+    left: 100px;
+    top: 1610px;
+}
+#interior{
+    position: absolute;
+    width: 150px;
+    bottom: 50px;
+    left: 50px;
+}
+#chairs{
+    position:absolute;
+    width: 200px;
+    top: 50px;
+    left: 200px;
+}
+#cupholder{
+    position: absolute;
+    width: 200px;
+    bottom: 30px;
+    left: 200px;
+}
+ /*slutt stilsetting av info om Komfort */
+
+/*stilsetting av sidedelerene */
+.Sitesplit{
+    width: 3000px;
+    height: 5px;
+    background-color: rgb(59, 207, 226);
+    position: absolute;
+}
+            
+#SiteSplit1{
+    top: 100px;
+}
+#SiteSplit2{
+    top: 200px;
+} 
+/*slutt stilsetting av sidedelerene*/
+
+/*stilsetting av Footeren */
+#Info-Fotter{
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    width: 96%;
+}
+/*slutt på stilsetting av Footeren*/
+
+/*start av stilsetting av "bobler" animasjon*/
+.bubble-group1 {
+    position: absolute;
+    top: 3950px;
+    left: 1%;
+    background-color: #FEFEFE;
+    opacity: 0.3;
+    border: 1px solid #3BCFE2;
+    border-radius: 50%;
+    box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+}
+
+.bubble-group2 {
+    position: absolute;
+    top: 3950px;
+    left: 97%;
+    background-color: #FEFEFE;
+    opacity: 0.3;
+    border: 1px solid #3BCFE2;
+    border-radius: 50%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+}
+
+#bubble1 {
+    width: 30px;
+    height: 30px;
+    animation: bubbleUp 24s infinite;
+    animation-delay: 5s;
+    border-radius: 50%;
+    left: 100px;
+}
+
+#bubble2 {
+    width: 15px;
+    height: 15px;
+    animation: bubbleUp 26s infinite;
+    border-radius: 50%;
+}
+
+#bubble3 {
+    width: 25px;
+    height: 25px;
+    animation: bubbleUp 21s infinite;
+    animation-delay: 1s;
+    border-radius: 50%;
+}
+
+#bubble4 {
+    width: 30px;
+    height: 30px;
+    animation: bubbleUp 28s infinite;
+    animation-delay: 3s;
+    border-radius: 55%;
+}
+
+#bubble5 {
+    width: 10px;
+    height: 10px;
+    animation: bubbleUp 24s infinite;
+    border-radius: 45%;
+}
+
+#bubble6 {
+    width: 40px;
+    height: 40px;
+    animation: bubbleUp 20s infinite;
+    animation-delay: 1.5s;
+    border-radius: 50%;
+}
+
+#bubble7 {
+    width: 30px;
+    height: 30px;
+    animation: bubbleUp 24s infinite;
+    animation-delay: 6s;
+    border-radius: 50%;
+    left: 100px;
+}
+
+  #bubble8 {
+    width: 15px;
+    height: 15px;
+    animation: bubbleUp 26s infinite;
+    border-radius: 50%;
+    animation-delay: 3s;
+}
+
+#bubble9 {
+    width: 25px;
+    height: 25px;
+    animation: bubbleUp 21s infinite;
+    animation-delay: 4s;
+    border-radius: 50%;
+}
+
+#bubble10 {
+    width: 30px;
+    height: 30px;
+    animation: bubbleUp 28s infinite;
+    animation-delay: 5s;
+    border-radius: 55%;
+}
+
+#bubble11 {
+    width: 10px;
+    height: 10px;
+    animation: bubbleUp 24s infinite;
+    border-radius: 45%;
+    animation-delay: 6s;
+}
+
+#bubble12 {
+    width: 40px;
+    height: 40px;
+    animation: bubbleUp 20s infinite;
+    animation-delay: 4.5s;
+    border-radius: 50%;
+}
+
+@keyframes bubbleUp {
+    100% {
+        transform: translateY(-4000px);
+    }
+}
+/*slutt på stilsetting av "bobler" animasjon*/
+
+
+
+
+
+
+
+
+

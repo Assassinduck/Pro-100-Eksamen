@@ -1,0 +1,466 @@
+/*---------  Body design  -------*/
+body {
+    margin: 0;
+    position: absolute;
+    width: 1525px;
+    height: 1100px;
+    background: url("Bilder/bakgrunn.png");
+    background-size: cover;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+
+/*---------- Navbar  ----------------*/
+header {
+    color: #ffffff;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 1.1rem;
+}
+
+ul {
+
+    margin-left: 120px;
+    margin-right: 120px;
+    padding: 1rem;
+    overflow: hidden;
+    margin-bottom: 0;
+    position: relative;
+}
+
+li {
+    display: inline-block;
+    min-width: 15%;
+    max-width: 100%;
+}
+
+li a {
+    padding: 1rem;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border-style: ridge;
+    border-color: #3BCFE2;
+}
+
+
+li a:hover:not(.active) {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*-----------  Navbar slutt  ------------*/
+
+
+/*---------  Footerdesign  --------*/
+footer {
+    text-align: center;
+    bottom: 0;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 1rem;
+    padding: 3rem;
+    color: white;
+}
+
+
+/*------ Klasser  ---------*/
+
+/*------- Navbar-klasse -------*/
+.active {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*--------- Container for ikonbilde til stoppene  -------*/
+.u-bane-stop {
+    width: 35px;
+    position: relative;
+}
+
+
+/*--------  Tekstdesign til stoppene  -------*/
+.text {
+    position: absolute;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    margin: 1rem;
+    border-radius: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0000cc;
+    color: #ffffff;
+    display: none;
+}
+
+/* ------  IDer  ---------*/
+
+/*------------  Logo som hjemknapp  -----------*/
+#logo {
+    width: 85px;
+}
+
+#logo:hover {
+    filter: brightness(130%);
+}
+
+
+/*------------  Selve kartet  --------------*/
+#train-route-container {
+    background: url(Bilder/U-bane-background.png) no-repeat;
+    background-size: contain;
+    height: 700px;
+    position: relative;
+    margin-left: 110px;
+}
+
+/*-----------  Toget og dens funskjoner  ------------*/
+#train {
+    width: 70px;
+    position: relative;
+    top: 14px;
+    left: 560px;
+    animation-name: trainMoving;
+    animation-duration: 30s;
+    transition: ease-in-out;
+    z-index: 100;
+    transform: rotate(26deg);
+}
+
+#drive-train-button {
+    background-color: #0000cc;
+    font-size: 24px;
+    color: #ffffff;
+    font-family: fantasy;
+    padding: 16px 8px;
+    margin: 2rem;
+    border-radius: 14px;
+}
+
+#drive-train-button:hover {
+    box-shadow: 5px 5px 18px #000000;
+}
+
+/*----------  Tog med funskjoner slutt  ----------*/
+
+
+/*------------------  Alle stoppene  --------------*/
+
+/*--- Nationalthatret --*/
+#nationaltheatret-container {
+    position: relative;
+    width: 1px;
+    top: -80px;
+    left: 859px;
+}
+
+#nationaltheatret:hover {
+    filter: brightness(130%);
+}
+
+#nationaltheatret-container:hover .text {
+    display: block;
+}
+
+
+/*--- Jernbanetorget ---*/
+#jernbanetorget-container {
+    position: relative;
+    width: 1px;
+    top: -35px;
+    left: 1005px;
+}
+
+#jernbanetorget:hover {
+    filter: brightness(130%);
+}
+
+#jernbanetorget-container:hover .text {
+    display: block;
+}
+
+
+/*--- Vippetangen ---*/
+#vippetangen-container {
+    position: relative;
+    width: 1px;
+    top: 82px;
+    left: 916px;
+}
+
+#vippetangen:hover {
+    filter: brightness(130%);
+}
+
+#vippetangen-container:hover .text {
+    display: block;
+}
+
+
+/*--- Hovedøya ---*/
+#hovedoya-container {
+    position: relative;
+    width: 1px;
+    top: 210px;
+    left: 848px;
+}
+
+#hovedoya:hover {
+    filter: brightness(130%);
+}
+
+#hovedoya-container:hover .text {
+    display: block;
+}
+
+
+/*--- Lindøya ---*/
+#lindoya-container {
+    position: relative;
+    width: 1px;
+    top: 250px;
+    left: 640px;
+}
+
+#lindoya:hover {
+    filter: brightness(130%);
+}
+
+#lindoya-container:hover .text {
+    display: block;
+}
+
+
+/*--- Nakholmen ---*/
+#nakholmen-container {
+    position: relative;
+    width: 1px;
+    top: 225px;
+    left: 502px;
+}
+
+#nakholmen:hover {
+    filter: brightness(130%);
+}
+
+#nakholmen-container:hover .text {
+    display: block;
+}
+
+
+/*--- Huk ---*/
+#huk-container {
+    position: relative;
+    width: 1px;
+    top: 30px;
+    left: 270px;
+}
+
+#huk:hover {
+    filter: brightness(130%);
+}
+
+#huk-container:hover .text {
+    display: block;
+}
+
+
+/*--- Paradisbukta ---*/
+#paradisbukta-container {
+    position: relative;
+    width: 1px;
+    top: -97px;
+    left: 209px;
+}
+
+#paradisbukta:hover {
+    filter: brightness(130%);
+}
+
+#paradisbukta-container:hover .text {
+    display: block;
+}
+
+
+/*--- Vikingskipmuseet ---*/
+#vikingskipmuseet-container {
+    position: relative;
+    width: 1px;
+    top: -202px;
+    left: 340px;
+}
+
+#vikingskipmuseet:hover {
+    filter: brightness(130%);
+}
+
+#vikingskipmuseet-container:hover .text {
+    display: block;
+}
+
+
+/*--- Frammuseet ---*/
+#frammuseet-container {
+    position: relative;
+    width: 1px;
+    top: -201px;
+    left: 500px;
+}
+
+#frammuseet:hover {
+    filter: brightness(130%);
+}
+
+#frammuseet-container:hover .text {
+    display: block;
+}
+
+
+/*--- Filipstadkaia ---*/
+#filipstadkaia-container {
+    position: relative;
+    width: 1px;
+    top: -310px;
+    left: 618px;
+}
+
+#filipstadkaia:hover {
+    filter: brightness(130%);
+}
+
+#filipstadkaia-container:hover .text {
+    display: block;
+}
+
+
+/*--- Aker brygge  ---*/
+#aker-brygge-container {
+    position: relative;
+    width: 1px;
+    top: -410px;
+    left: 752px;
+}
+
+#aker-brygge:hover {
+    filter: brightness(130%);
+}
+
+#aker-brygge-container:hover .text {
+    display: block;
+}
+
+/*---------  Stoppesteder slutt  ---------*/
+
+
+/* ------ Animasjoner  ---------*/
+
+/*----------------------  Animasjon av u-banen  ---------------*/
+
+@keyframes trainMoving {
+    0% {
+        left: 560px;
+        top: 14px
+    }
+
+    /*nationalteatret*/
+
+    8.3% {
+        left: 675px;
+        top: 100px;
+        transform: rotate(-60deg)
+    }
+
+    /*jernbanetorget*/
+
+    16.6% {
+        left: 585px;
+        top: 250px;
+        transform: rotate(-80deg)
+    }
+
+    /*vippetangen*/
+
+    24.9% {
+        left: 517px;
+        top: 415px;
+        transform: rotate(-30deg)
+    }
+
+    /*hovedøya*/
+
+    33.2% {
+        left: 310px;
+        top: 492px;
+        transform: rotate(0deg)
+    }
+
+    /*lindøya*/
+
+    41.5% {
+        left: 170px;
+        top: 504px;
+        transform: rotate(26deg)
+    }
+
+    /*nakholmen*/
+
+    49.8% {
+        left: -64px;
+        top: 347px;
+        transform: rotate(52deg)
+    }
+
+    /*huk*/
+
+    58.1% {
+        left: -110px;
+        top: 240px;
+        transform: rotate(-50deg)
+    }
+
+    /*paradisbukta*/
+
+    66.4% {
+        left: 9px;
+        top: 195px;
+        transform: rotate(10deg)
+    }
+
+    /*vikingmuseet*/
+
+    74.7% {
+        left: 170px;
+        top: 237px;
+        transform: rotate(-30deg)
+    }
+
+    /*frammuseet*/
+
+    83% {
+        left: 290px;
+        top: 160px;
+        transform: rotate(-30deg)
+    }
+
+    /*filipstad*/
+
+    91.3% {
+        left: 410px;
+        top: 108px;
+        transform: rotate(-20deg)
+    }
+
+    /*akerbrygge*/
+
+    100% {
+        left: 560px;
+        top: 14px;
+    }
+
+    /*nationalteatret*/
+}
